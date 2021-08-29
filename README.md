@@ -16,14 +16,6 @@ Follow the steps:
 - npm i
 - ng serve
 
-## Deployment Task-2
+## Deployed app
 
-### Manual upload
-
-- [CloudFront](https://d3jpq1m1z9zuk9.cloudfront.net)
-- [S3 Buckets (403)](http://aws-task-2.s3-website-eu-west-1.amazonaws.com/)
-
-### Automated upload
-
-- [CloudFront](https://d1992hylsujxax.cloudfront.net)
-- [S3 Buckets (403)](http://aws-task-2-auto.s3-website-eu-west-1.amazonaws.com/)
+https://dd1vsnw9zieqf.cloudfront.net

@@ -1,4 +1,4 @@
-service: aws-task-2
+service: aws-shop-frontend
 
 frameworkVersion: "2"
 
@@ -13,7 +13,7 @@ plugins:
 
 custom:
   client:
-    bucketName: aws-task-2-auto
+    bucketName: aws-shop-frontend
     distributionFolder: dist/app
     indexDocument: index.html
     manageResources: false

@@ -19,8 +19,13 @@ export class ErrorPrintInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<unknown>> {
     return next.handle(request).pipe(
       tap({
-        error: () => {
+        // eslint-disable-next-line rxjs/no-implicit-any-catch
+        error: (err: any) => {
           const url = new URL(request.url);
+
+          if (err.status === 401 || err.status === 403) {
+            alert(err.message);
+          }
 
           this.notificationService.showError(
             `Request to "${url.pathname}" failed. Check the console for the details`,
